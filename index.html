@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just basic JS Calculator</title>
+</head>
+<body>
+    <script>
+    let name = prompt("Enter your name");
+    let num1 = parseFloat(prompt("Hi, " + name + " Enter the first number: "));
+    let num2 = parseFloat(prompt("Thanks!, Enter the second number: "));
+    let operator = prompt("Thanks!, now choose the operator (+/-/*/%)");
+
+    if (operator == "+"){
+        document.write("Provided numbers when added to each other give a result: " + (num1 + num2));
+    } else if (operator == "-"){
+        document.write("Provided numbers when subtracted give a result: " + num1 - num2);
+    } else if (operator == "*"){
+        document.write("Provided numbers when multiplied give a result: " + num1 * num2);
+    } else if (operator == "/"){
+        document.write("Provided numbers when divided give a result: " + num1/num2); 
+    } else {
+        document.write("I am sorry, but I don't know this operator :(");
+    }
+
+    </script>
+</body>
+</html>
